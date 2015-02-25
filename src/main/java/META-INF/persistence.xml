@@ -4,5 +4,6 @@
 		<class>ua.ieromenko.jb.entity.User</class>
 		<class>ua.ieromenko.jb.entity.Role</class>
 		<class>ua.ieromenko.jb.entity.Blog</class>
+		<class>ua.ieromenko.jb.entity.Item</class>
 	</persistence-unit>
 </persistence>
