@@ -11,11 +11,11 @@ import ua.ieromenko.jb.service.UserService;
 public class UserController {
 
 	@Autowired
-	private UserService userSrevice;
+	private UserService userService;
 	
 	@RequestMapping("/users")
 	public String users(Model model){
-		model.addAttribute("uders", userSrevice.findAll());
+		model.addAttribute("users", userService.findAll());
 		return "users";
 	}
 }
