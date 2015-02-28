@@ -3,15 +3,15 @@
 
 <%@   taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 
-<table>
+<table class="table table-hover table-bordered">
   <thead>
-    <tr>
+    <tr class="active">
       <th>user name</th>
     </tr>
   </thead>
   <tbody>
      <c:forEach items="${users}" var="user"><!-- for (User user: users) -->
-       <tr>
+       <tr class="info">
          <td>
               ${user.name}
          </td>
