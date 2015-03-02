@@ -26,7 +26,7 @@ public class UserController {
 		return "user-detail";
 	}
 	
-	@RequestMapping("/reguster")
+	@RequestMapping("/register")
 	public String showRegistrer(){
 		return "user-register";
 	}
