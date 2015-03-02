@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+ <%@ include file="../layout/taglib.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
 
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<%@ taglib uri="http://tiles.apache.org/tags-tiles-extras" prefix="tilesx" %>
+
 
 <tilesx:useAttribute name="current"/>
 
