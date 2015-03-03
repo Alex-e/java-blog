@@ -1,11 +1,17 @@
 package ua.ieromenko.jb.controller;
 
+import java.io.Reader;
+
+import javax.servlet.ServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import ua.ieromenko.jb.entity.User;
 import ua.ieromenko.jb.service.UserService;
@@ -35,6 +41,13 @@ public class UserController {
 	
 	@RequestMapping("/register")
 	public String showRegistrer(){
+		return "user-register";
+	}
+	
+	
+	@RequestMapping(value="/register", method=RequestMethod.POST)
+	public String doRegistrer(@ModelAttribute("user") User user){
+		userService.save(user);
 		return "user-register";
 	}
 	
