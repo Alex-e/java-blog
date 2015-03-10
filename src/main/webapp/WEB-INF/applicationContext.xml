@@ -40,5 +40,7 @@
 		
 		<jpa:repositories base-package="ua.ieromenko.jb.repository" entity-manager-factory-ref="emf"
 		 transaction-manager-ref="transactionManager"/>
+		 
+		 <import resource="security.xml"/>
 		
 </beans>
