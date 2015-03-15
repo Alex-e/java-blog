@@ -69,4 +69,9 @@ public class UserService {
 		userRepository.save(user);
 	}
 
+	public User findOneWithBlog(String name) {
+		User user = userRepository.findByName(name);
+		return findOneWithBlog(user.getId());
+	}
+
 }
