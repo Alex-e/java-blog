@@ -60,16 +60,9 @@
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">...</div>
-    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-    <div role="tabpanel" class="tab-pane" id="settings">...</div>
-  </div>
-
-</div>
-
 <c:forEach items="${user.blogs}" var="blog">
-	<h1>${blog.name}</h1>
+    <div class="tab-pane" id="blog_${blog.id}">
+    <h1>${blog.name}</h1>
 	<p>${blog.url}</p>
 
 	<table class="table table-hover table-bordered">
@@ -92,4 +85,10 @@
 
 
 	</table>
+    </div>
 </c:forEach>
+  </div>
+
+</div>
+
+	
