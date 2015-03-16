@@ -47,6 +47,27 @@
 	</div>
 </form:form>
 
+<br/><br/>
+
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+  <c:forEach items="${user.blogs}" var="blog">
+    <li ><a href="#blog_${blog.id}"  data-toggle="tab">${blog.name}</a></li>
+  </c:forEach>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
+
+</div>
+
 <c:forEach items="${user.blogs}" var="blog">
 	<h1>${blog.name}</h1>
 	<p>${blog.url}</p>
