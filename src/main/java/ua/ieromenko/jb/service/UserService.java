@@ -74,4 +74,8 @@ public class UserService {
 		return findOneWithBlog(user.getId());
 	}
 
+	public void delete(int id) {
+		userRepository.delete(id);
+	}
+
 }
