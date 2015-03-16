@@ -49,6 +49,12 @@
 
 <br/><br/>
 
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.nav-tabs a:first').tab('show'); // show first tab
+});
+
+</script>
 <div role="tabpanel">
 
   <!-- Nav tabs -->
