@@ -69,7 +69,7 @@ public class UserController {
 	public String account(Model model, Principal principal){
 		String name = principal.getName();
 		model.addAttribute("user", userService.findOneWithBlog(name));
-		return "user-detail";
+		return "account";
 	}
 	
 	@RequestMapping(value="/account", method=RequestMethod.POST)
