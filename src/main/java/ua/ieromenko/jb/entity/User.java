@@ -24,7 +24,8 @@ public class User {
 	@Size (min = 3, message = "Name must be at least 3 characters long!")
 	private String name;
 	
-	@Email
+	@Size (min = 1, message = "Invalid email adress")
+	@Email(message = "Invalid email adress")
 	private String email;
 	
 	@Size (min = 5, message = "Name must be at least 5 characters long!")
