@@ -3,7 +3,7 @@
 
 <%@ include file="../layout/taglib.jsp"%>
 
-<h1>${user.name}</h1>
+
 
 <form:form commandName="blog" cssClass="form horizontal">
 	<!-- Button trigger modal -->
